@@ -21,6 +21,9 @@ Dictionary = nil
 ---@type Callable
 Callable = nil
 
+---@type Vector2
+Vector2 = nil
+
 ---@param path string
 ---@return any|Object
 function loadv(path) end

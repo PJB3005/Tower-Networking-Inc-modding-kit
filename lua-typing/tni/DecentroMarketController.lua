@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class DecentroMarketController : Node
 ---@field inverse_price_per_user number # Constant value: 10.0

@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class DeviceUnit : PickableDevice
 ---@field ZINDEX integer # Constant value: 200
@@ -106,6 +106,8 @@ DeviceUnit.MountType = {
 	["R930"] = 2,
 	["R630"] = 3,
 	["BLADE_BAY"] = 4,
+	["KEYSTONE_HOLE"] = 5,
+	["SFP_SLOT"] = 6,
 }
 
 ---@param extra_devices integer?  # Default = 0

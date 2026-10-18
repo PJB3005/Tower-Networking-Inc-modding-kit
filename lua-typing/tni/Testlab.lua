@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Testlab : ScreenApp
 ---@field EVENT_OUTAGE integer # Constant value: 0
@@ -15,6 +15,7 @@
 ---@field schedule_button Button
 ---@field worm_floor_selector OptionButton
 ---@field cyber_attack_selector OptionButton
+---@field worm_status_label Label
 ---@field device_address_input LineEdit
 ---@field copod_status_label Label
 ---@field user_type_selector OptionButton

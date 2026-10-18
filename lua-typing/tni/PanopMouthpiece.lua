@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class PanopMouthpiece : TraversalCountUses
 ---@field influence_per_boost_pct number

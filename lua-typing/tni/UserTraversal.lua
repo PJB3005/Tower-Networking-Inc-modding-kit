@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class UserTraversal : TraversalConsume
 ---@field MAX_PHASE_OFFSET number # Constant value: 0.04166666666667

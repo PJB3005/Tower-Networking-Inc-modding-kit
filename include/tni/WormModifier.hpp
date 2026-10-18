@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_WORMMODIFIER
 #define TNI_API_HEADER_WORMMODIFIER
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -17,6 +17,9 @@ struct WormModifier : public WormBase {
 
 
 	PROPERTY(target_modifier, int64_t);
+	PROPERTY(target_with_address, bool);
+	PROPERTY(target_use_descript, UseDescript);
+	PROPERTY(target_address, String);
 	PROPERTY(release_name_template, String);
 	PROPERTY(max_spread_per_tick, int64_t);
 	PROPERTY(signature, String);
@@ -43,8 +46,8 @@ struct WormModifier : public WormBase {
 	PROPERTY(gw_playopt, PlayOptions);
 	PROPERTY(host_controller, LogicController);
 
-	inline NetworkPacketRoot make_packet_root();
 	inline Variant make_traversal_packet(const NetworkPacketRoot& proot);
+	inline NetworkPacketRoot make_packet_root();
 	inline void tick();
 	inline void client_sim();
 	inline String colorize_description(String ds);
@@ -57,13 +60,14 @@ struct WormModifier : public WormBase {
 	inline bool test_routing_exemption(Variant packet);
 };
 
+#include "UseDescript.hpp"
 #include "PlayOptions.hpp"
 #include "LogicController.hpp"
 #include "NetworkPacketRoot.hpp"
 #include "PacketControlModule.hpp"
 
-inline NetworkPacketRoot WormModifier::make_packet_root() { return NetworkPacketRoot(this->operator()("make_packet_root").as_object().address()); }
 inline Variant WormModifier::make_traversal_packet(const NetworkPacketRoot& proot) { return this->operator()("make_traversal_packet", Object(reinterpret_cast<const Object*>(&proot)->address())); }
+inline NetworkPacketRoot WormModifier::make_packet_root() { return NetworkPacketRoot(this->operator()("make_packet_root").as_object().address()); }
 inline void WormModifier::tick() { this->voidcall("tick"); }
 inline void WormModifier::client_sim() { this->voidcall("client_sim"); }
 inline String WormModifier::colorize_description(String ds) { return this->operator()("colorize_description", ds); }

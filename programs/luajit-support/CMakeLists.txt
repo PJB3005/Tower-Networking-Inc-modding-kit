@@ -2,10 +2,13 @@ cmake_minimum_required(VERSION 3.10)
 project(luajit-support)
 
 add_ci_program(luajit-support
-	gdobject.cpp gdobject.hpp
+	gdarray.cpp gdarray.hpp
 	gdcallable.cpp gdcallable.hpp
 	gddictionary.cpp gddictionary.hpp
-	gdarray.cpp gdarray.hpp
+	gdobject.cpp gdobject.hpp
+	gdvector2.cpp gdvector2.hpp
+	gdpropertyproxy.cpp gdpropertyproxy.hpp
+	
 	utils.cpp utils.hpp
 	luamodpackage.cpp luamodpackage.hpp
 	entry.cpp

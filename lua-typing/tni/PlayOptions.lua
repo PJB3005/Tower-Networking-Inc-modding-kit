@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class PlayOptions : Resource
 ---@field EASIER_EPSILON number # Constant value: 0.0001

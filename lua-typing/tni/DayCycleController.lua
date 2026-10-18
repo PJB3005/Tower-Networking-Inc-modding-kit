@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class DayCycleController : CanvasModulate
 ---@field DEFAULT_DARKNESS number # Constant value: 0.6

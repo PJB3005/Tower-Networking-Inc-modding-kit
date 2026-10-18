@@ -1,8 +1,15 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Ups : DeviceUnit
+---@field LOW_BATTERY_RATIO number # Constant value: 0.25
+---@field LOW_BATTERY_BEEP_CYCLE_MS integer # Constant value: 30000
+---@field LOW_BATTERY_BEEP_BURST_MS integer # Constant value: 600
 ---@field display RichTextLabel
+---@field show_status_leds boolean
+---@field online_led PoweredLight
+---@field battery_led PoweredLight
+---@field overload_led PoweredLight
 ---@field label_update_timer Timer
 ---@field product_name string
 ---@field description string

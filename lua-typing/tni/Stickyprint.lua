@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Stickyprint : ScreenApp
 ---@field COST_PER_PRINT integer # Constant value: 6

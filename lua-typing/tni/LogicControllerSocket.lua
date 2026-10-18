@@ -1,8 +1,9 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class LogicControllerSocket : Socket
 ---@field PacketPlaceholderScene string # Constant value: <PackedScene>
+---@field StretchedGlowingPacketScene string # Constant value: <PackedScene>
 ---@field is_back_port boolean
 ---@field link_ind Node2D
 ---@field act_ind_rcache Node2D

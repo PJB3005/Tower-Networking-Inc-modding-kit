@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class GameWorld : Node2D
 ---@field mobile_os_scn string # Constant value: <PackedScene>

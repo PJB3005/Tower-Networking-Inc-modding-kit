@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class RandomSphereWalker : Node3D
 ---@field walker_nodes Array<any>

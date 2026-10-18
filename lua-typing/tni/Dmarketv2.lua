@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Dmarketv2 : ScreenApp
 ---@field lstv2scn PackedScene
@@ -24,6 +24,9 @@
 ---@field cart_preview_overlay PanelContainer
 ---@field cart_preview_scroll ScrollContainer
 ---@field toggle_cart_btn Button
+---@field pager Container
+---@field prev_page_btn Button
+---@field next_page_btn Button
 ---@field current_local_cart table<any,any>
 ---@field dlist Array<any>
 ---@field main_pane MainPane

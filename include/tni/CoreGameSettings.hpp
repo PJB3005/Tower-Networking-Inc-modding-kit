@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_COREGAMESETTINGS
 #define TNI_API_HEADER_COREGAMESETTINGS
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -15,6 +15,11 @@ struct CoreGameSettings : public BaseSettings {
 	constexpr CoreGameSettings(Object obj) : CoreGameSettings{obj.address()} {}
 	CoreGameSettings(Variant variant) : CoreGameSettings{variant.as_object().address()} {}
 
+	enum struct PhySimLevel : int64_t {  // NOTE: You should recompile your mod if this enum changes!
+		LOW = 0,
+		NORMAL = 1,
+		HIGH = 2,
+	};
 
 	PROPERTY(mouse_pan_speed, double);
 	PROPERTY(keyboard_pan_speed, double);
@@ -26,6 +31,7 @@ struct CoreGameSettings : public BaseSettings {
 	PROPERTY(autosave_freq_min, double);
 	PROPERTY(autosave_retention, int64_t);
 	PROPERTY(perf_phy_sim_mode, int64_t);
+	PROPERTY(perf_phy_sim_level, int64_t);
 	PROPERTY(perf_cable_sim_mode, int64_t);
 	PROPERTY(show_announcements, bool);
 	PROPERTY(shift_panning_enabled, bool);
@@ -39,6 +45,7 @@ struct CoreGameSettings : public BaseSettings {
 	PROPERTY(show_help_guides, bool);
 	PROPERTY(player_set_name, String);
 	PROPERTY(show_packet_animations, bool);
+	PROPERTY(packet_animation_style, String);
 	PROPERTY(default_user_dhcp, String);
 	PROPERTY(default_device_dhcp, String);
 	PROPERTY(addr_copy_mode, int64_t);

@@ -1,9 +1,11 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class RemovableCPU : PeripheralPlug
 ---@field available_cpu integer
 ---@field power_draw integer
+---@field recycle_price_factor number
+---@field recycle_price integer
 ---@field product_name string
 ---@field price integer
 ---@field description string

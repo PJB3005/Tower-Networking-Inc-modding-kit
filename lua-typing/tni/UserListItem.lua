@@ -1,9 +1,9 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class UserListItem : HBoxContainer
----@field view_icon_texture Object # Constant value: (res://assets/appicons/surveyor/content-security-policy-svgrepo-com.svg):<CompressedTexture2D#-9223369613570401690>
----@field offline_icon_texture Object # Constant value: (res://assets/appicons/surveyor/offline-first-svgrepo-com.svg):<CompressedTexture2D#-9223369613218080142>
+---@field view_icon_texture Object # Constant value: (res://assets/appicons/surveyor/content-security-policy-svgrepo-com.svg):<CompressedTexture2D#-9223369621120149079>
+---@field offline_icon_texture Object # Constant value: (res://assets/appicons/surveyor/offline-first-svgrepo-com.svg):<CompressedTexture2D#-9223369620767827531>
 ---@field is_header boolean
 ---@field user User
 ---@field usn_lbl Label

@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_LOGICCONTROLLERSOCKET
 #define TNI_API_HEADER_LOGICCONTROLLERSOCKET
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -16,6 +16,7 @@ struct LogicControllerSocket : public Socket {
 	LogicControllerSocket(Variant variant) : LogicControllerSocket{variant.as_object().address()} {}
 
 	PROPERTY(PacketPlaceholderScene, Variant);  // Const value type was not supported.
+	PROPERTY(StretchedGlowingPacketScene, Variant);  // Const value type was not supported.
 
 	PROPERTY(is_back_port, bool);
 	PROPERTY(link_ind, Node2D);

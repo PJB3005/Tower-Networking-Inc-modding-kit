@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class SecondMonitor : PropMod
 ---@field techv string # Constant value: second_monitor

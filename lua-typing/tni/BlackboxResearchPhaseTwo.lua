@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class BlackboxResearchPhaseTwo : PropMod
 ---@field techv string # Constant value: secretariat_blackbox_v2

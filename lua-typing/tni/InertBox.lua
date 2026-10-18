@@ -1,8 +1,9 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class InertBox : DeviceUnit
 ---@field tear_sfx AudioStreamPlayer2D
+---@field preseated_delivery_objs Array<any>
 ---@field product_name string
 ---@field description string
 ---@field text string
@@ -68,6 +69,18 @@ function InertBox.is_empty() end
 
 ---@param destroy boolean?  # Default = false
 function InertBox.tear(destroy) end
+
+function InertBox.seat_delivery() end
+
+function InertBox.wake_clear_holes() end
+
+---@param base_val integer
+function InertBox.lift_child_z_index(base_val) end
+
+function InertBox.reset_child_z_index() end
+
+---@param new_pos Vector2
+function InertBox.elevator_move(new_pos) end
 
 ---@param extra_devices integer?  # Default = 0
 ---@return integer

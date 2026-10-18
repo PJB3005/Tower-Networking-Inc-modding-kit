@@ -2,7 +2,7 @@ import os.path
 import xml.etree.ElementTree as ET
 
 
-TARGETS = ["Array", "Dictionary"]
+TARGETS = ["Array", "Dictionary", "Vector2"]
 # Obtain from https://github.com/godotengine/godot/tree/master/doc/classes
 DOC_PATH = "doc/classes"
 

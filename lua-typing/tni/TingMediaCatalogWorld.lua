@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class TingMediaCatalogWorld : GameWorld
 ---@field is_state_restored boolean

@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Breaktime : ScreenApp
 ---@field CDFTIME number # Constant value: 3.0

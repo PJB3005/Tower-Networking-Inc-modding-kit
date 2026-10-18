@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class ModFileAccess : RefCounted
 local ModFileAccess = {}
@@ -50,9 +50,8 @@ function ModFileAccess.get_half() end
 ---@return string
 function ModFileAccess.get_line() end
 
----@param _skip_cr boolean?  # Default = false
 ---@return string
-function ModFileAccess.get_as_text(_skip_cr) end
+function ModFileAccess.get_as_text() end
 
 ---@return number
 function ModFileAccess.get_real() end

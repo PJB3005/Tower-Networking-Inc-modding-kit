@@ -9,11 +9,14 @@
 #include "gdcallable.hpp"
 #include "gdarray.hpp"
 #include "gddictionary.hpp"
+#include "gdvector2.hpp"
+#include "gdpropertyproxy.hpp"
 
 
 int variant_self_call(lua_State *L) {
     // FIXME: There is no way to know with `v.callp` if the method actually exist or not...
     //        Can we find a way?
+    //        We've currently resorted to each caller checking if the method exists before calling this function.
 
     // Stack: Variant, args...
     if (lua_type(L, 1) != LUA_TUSERDATA) {
@@ -82,6 +85,8 @@ int push_gd_variant(lua_State *L, Variant variant) {
             return push_gd_array(L, variant.as_array());
         case Variant::Type::DICTIONARY:
             return push_gd_dictionary(L, variant.as_dictionary());
+        case Variant::Type::VECTOR2:
+            return push_gd_vector2(L, (Vector2)variant);
         default:
             printf("push_gd_type() Unhandled variant type %d\n", variant.get_type());
             return 0;
@@ -115,6 +120,9 @@ Variant to_gd_variant(lua_State *L, int pos) {
                 return *ud;
 
             if (Dictionary* ud = test_gddictionary(L, pos))
+                return *ud;
+
+            if (Vector2* ud = test_gdvector2(L, pos))
                 return *ud;
             
             luaL_error(L, "Can not convert userdata to godot variant.");  // luaL_error never returns.
@@ -194,6 +202,12 @@ void print_lua_stack(lua_State *L) {
                     printf("\tGDCallable: %d @ %p", ud->get_variant_index(), ud);
                 if (Array* ud = test_gdarray(L, i))
                     printf("\tGDArray: %d @ %p", ud->get_variant_index(), ud);
+                if (Dictionary* ud = test_gddictionary(L, i))
+                    printf("\tGDDictionary: %d @ %p", ud->get_variant_index(), ud);
+                if (Vector2* ud = test_gdvector2(L, i))
+                    printf("\tGDVector2: %p", ud);
+                if (LuaPropertyProxy<> ud = test_gdpropertyproxy(L, i); ud.obj.is_valid())
+                    printf("\tGDPropertyProxy: %s['%s']", ud.obj.to_string().utf8().c_str(), ud.property.c_str());
                 printf("\n");
                 break;
             default:

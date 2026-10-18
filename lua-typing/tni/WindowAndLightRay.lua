@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class WindowAndLightRay : ParallaxWindow
 ---@field region_center Vector2

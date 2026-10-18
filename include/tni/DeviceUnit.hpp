@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_DEVICEUNIT
 #define TNI_API_HEADER_DEVICEUNIT
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -58,6 +58,8 @@ struct DeviceUnit : public PickableDevice {
 		R930 = 2,
 		R630 = 3,
 		BLADE_BAY = 4,
+		KEYSTONE_HOLE = 5,
+		SFP_SLOT = 6,
 	};
 	static constexpr double RNG_FAIL_INVERSE_STEEP = -12.0;  // NOTE: You should recompile your mod if this value changes!
 	static constexpr double SNAP_MARGIN = 2.0;  // NOTE: You should recompile your mod if this value changes!

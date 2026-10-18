@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_TRAYAFFIXEDLINK
 #define TNI_API_HEADER_TRAYAFFIXEDLINK
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -14,8 +14,8 @@ struct TrayAffixedLink : public Node2D {
 	constexpr TrayAffixedLink(Object obj) : TrayAffixedLink{obj.address()} {}
 	TrayAffixedLink(Variant variant) : TrayAffixedLink{variant.as_object().address()} {}
 
-	static constexpr double DEFAULT_MAX_CABLE_LENGTH = 700.0;  // NOTE: You should recompile your mod if this value changes!
-	static constexpr double MAX_INTERTRAY_LENGTH = 3500.0;  // NOTE: You should recompile your mod if this value changes!
+	static constexpr double DEFAULT_MAX_CABLE_LENGTH = 1150.0;  // NOTE: You should recompile your mod if this value changes!
+	static constexpr double MAX_INTERTRAY_LENGTH = 1000.0;  // NOTE: You should recompile your mod if this value changes!
 	static constexpr double DANGLE_SLACK_FACTOR = 1.15;  // NOTE: You should recompile your mod if this value changes!
 	static constexpr int64_t ZINDEX = 151;  // NOTE: You should recompile your mod if this value changes!
 	static constexpr int64_t INTER_TRAY_ZINDEX = 1000;  // NOTE: You should recompile your mod if this value changes!

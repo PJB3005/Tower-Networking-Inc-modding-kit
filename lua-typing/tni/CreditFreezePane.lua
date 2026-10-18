@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class CreditFreezePane : VBoxContainer
 ---@field BEHAVIOR_KEY string # Constant value: profile-user-behavior

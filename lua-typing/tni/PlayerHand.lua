@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class PlayerHand : CharacterBody2D
 ---@field slide_speed integer # Constant value: 1000

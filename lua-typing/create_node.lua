@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@param classname "AESContext"
 ---@param param string
@@ -821,11 +821,6 @@ function create_node(classname, param) end
 ---@return CanvasItemEditor
 function create_node(classname, param) end
 
----@param classname "CanvasItemEditorSelectedItem"
----@param param string
----@return CanvasItemEditorSelectedItem
-function create_node(classname, param) end
-
 ---@param classname "CanvasItemEditorViewport"
 ---@param param string
 ---@return CanvasItemEditorViewport
@@ -1124,11 +1119,6 @@ function create_node(classname, param) end
 ---@param classname "ControlEditorToolbar"
 ---@param param string
 ---@return ControlEditorToolbar
-function create_node(classname, param) end
-
----@param classname "ControlPositioningWarning"
----@param param string
----@return ControlPositioningWarning
 function create_node(classname, param) end
 
 ---@param classname "ConvertTransformModifier3D"
@@ -1481,14 +1471,14 @@ function create_node(classname, param) end
 ---@return EditorFileSystemImportFormatSupportQuery
 function create_node(classname, param) end
 
+---@param classname "EditorHelp"
+---@param param string
+---@return EditorHelp
+function create_node(classname, param) end
+
 ---@param classname "EditorHelpBit"
 ---@param param string
 ---@return EditorHelpBit
-function create_node(classname, param) end
-
----@param classname "EditorHelpBitTooltip"
----@param param string
----@return EditorHelpBitTooltip
 function create_node(classname, param) end
 
 ---@param classname "EditorHelpSearch"
@@ -1601,19 +1591,9 @@ function create_node(classname, param) end
 ---@return EditorProperty
 function create_node(classname, param) end
 
----@param classname "EditorPropertyArrayObject"
----@param param string
----@return EditorPropertyArrayObject
-function create_node(classname, param) end
-
 ---@param classname "EditorPropertyDictionaryObject"
 ---@param param string
 ---@return EditorPropertyDictionaryObject
-function create_node(classname, param) end
-
----@param classname "EditorPropertyLayersGrid"
----@param param string
----@return EditorPropertyLayersGrid
 function create_node(classname, param) end
 
 ---@param classname "EditorPropertyNameProcessor"
@@ -1766,11 +1746,6 @@ function create_node(classname, param) end
 ---@return EditorVariantTypeOptionButton
 function create_node(classname, param) end
 
----@param classname "EditorVariantTypePopupMenu"
----@param param string
----@return EditorVariantTypePopupMenu
-function create_node(classname, param) end
-
 ---@param classname "EditorVersionButton"
 ---@param param string
 ---@return EditorVersionButton
@@ -1854,6 +1829,11 @@ function create_node(classname, param) end
 ---@param classname "FileSystemList"
 ---@param param string
 ---@return FileSystemList
+function create_node(classname, param) end
+
+---@param classname "FindBar"
+---@param param string
+---@return FindBar
 function create_node(classname, param) end
 
 ---@param classname "FindInFilesDialog"
@@ -1969,11 +1949,6 @@ function create_node(classname, param) end
 ---@param classname "GDScriptWorkspace"
 ---@param param string
 ---@return GDScriptWorkspace
-function create_node(classname, param) end
-
----@param classname "GDShaderSyntaxHighlighter"
----@param param string
----@return GDShaderSyntaxHighlighter
 function create_node(classname, param) end
 
 ---@param classname "GLTFAccessor"
@@ -2114,16 +2089,6 @@ function create_node(classname, param) end
 ---@param classname "GameView"
 ---@param param string
 ---@return GameView
-function create_node(classname, param) end
-
----@param classname "GameWorld2DBase"
----@param param string
----@return GameWorld2DBase
-function create_node(classname, param) end
-
----@param classname "GameWorld3DBase"
----@param param string
----@return GameWorld3DBase
 function create_node(classname, param) end
 
 ---@param classname "Generic6DOFJoint3D"
@@ -3721,16 +3686,6 @@ function create_node(classname, param) end
 ---@return PlaneMesh
 function create_node(classname, param) end
 
----@param classname "PlayerInboxController"
----@param param string
----@return PlayerInboxController
-function create_node(classname, param) end
-
----@param classname "PlayerInboxMessage"
----@param param string
----@return PlayerInboxMessage
-function create_node(classname, param) end
-
 ---@param classname "PluginConfigDialog"
 ---@param param string
 ---@return PluginConfigDialog
@@ -4176,11 +4131,6 @@ function create_node(classname, param) end
 ---@return SandboxFunctionState
 function create_node(classname, param) end
 
----@param classname "SaveV2Controller"
----@param param string
----@return SaveV2Controller
-function create_node(classname, param) end
-
 ---@param classname "SceneCacheInterface"
 ---@param param string
 ---@return SceneCacheInterface
@@ -4351,11 +4301,6 @@ function create_node(classname, param) end
 ---@return ShaderCreateDialog
 function create_node(classname, param) end
 
----@param classname "ShaderEditor"
----@param param string
----@return ShaderEditor
-function create_node(classname, param) end
-
 ---@param classname "ShaderGlobalsEditor"
 ---@param param string
 ---@return ShaderGlobalsEditor
@@ -4384,11 +4329,6 @@ function create_node(classname, param) end
 ---@param classname "ShaderMaterial"
 ---@param param string
 ---@return ShaderMaterial
-function create_node(classname, param) end
-
----@param classname "ShaderTextEditor"
----@param param string
----@return ShaderTextEditor
 function create_node(classname, param) end
 
 ---@param classname "Shape2D"
@@ -4861,11 +4801,6 @@ function create_node(classname, param) end
 ---@return TextServerManager
 function create_node(classname, param) end
 
----@param classname "TextShaderEditor"
----@param param string
----@return TextShaderEditor
-function create_node(classname, param) end
-
 ---@param classname "Texture"
 ---@param param string
 ---@return Texture
@@ -5079,11 +5014,6 @@ function create_node(classname, param) end
 ---@param classname "Time"
 ---@param param string
 ---@return Time
-function create_node(classname, param) end
-
----@param classname "TimeController"
----@param param string
----@return TimeController
 function create_node(classname, param) end
 
 ---@param classname "Timer"

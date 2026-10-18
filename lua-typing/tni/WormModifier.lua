@@ -1,8 +1,11 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class WormModifier : WormBase
 ---@field target_modifier Program.ControllerModifiers
+---@field target_with_address boolean
+---@field target_use_descript UseDescript
+---@field target_address string
 ---@field release_name_template string
 ---@field max_spread_per_tick integer
 ---@field signature string
@@ -29,6 +32,10 @@
 ---@field gw_playopt PlayOptions
 ---@field host_controller LogicController
 local WormModifier = {}
+
+---@param proot NetworkPacketRoot
+---@return Object
+function WormModifier.make_traversal_packet(proot) end
 
 ---@return NetworkPacketRoot
 function WormModifier.make_packet_root() end

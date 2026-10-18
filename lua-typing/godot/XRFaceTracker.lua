@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.10.0
+-- Generated API for game version 0.13.3
 
 ---@class XRFaceTracker : XRTracker
 ---@field blend_shapes PackedFloat32Array

@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_UPS
 #define TNI_API_HEADER_UPS
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -15,8 +15,15 @@ struct Ups : public DeviceUnit {
 	constexpr Ups(Object obj) : Ups{obj.address()} {}
 	Ups(Variant variant) : Ups{variant.as_object().address()} {}
 
+	static constexpr double LOW_BATTERY_RATIO = 0.25;  // NOTE: You should recompile your mod if this value changes!
+	static constexpr int64_t LOW_BATTERY_BEEP_CYCLE_MS = 30000;  // NOTE: You should recompile your mod if this value changes!
+	static constexpr int64_t LOW_BATTERY_BEEP_BURST_MS = 600;  // NOTE: You should recompile your mod if this value changes!
 
 	PROPERTY(display, RichTextLabel);
+	PROPERTY(show_status_leds, bool);
+	PROPERTY(online_led, PoweredLight);
+	PROPERTY(battery_led, PoweredLight);
+	PROPERTY(overload_led, PoweredLight);
 	PROPERTY(label_update_timer, Timer);
 	PROPERTY(product_name, String);
 	PROPERTY(description, String);
@@ -97,6 +104,7 @@ struct Ups : public DeviceUnit {
 	inline void setup_teleport(Variant gpos);
 };
 
+#include "PoweredLight.hpp"
 #include "LogicController.hpp"
 #include "PowerController.hpp"
 

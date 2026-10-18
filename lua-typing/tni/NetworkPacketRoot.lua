@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class NetworkPacketRoot : RefCounted
 ---@field default_ttl integer # Constant value: 32

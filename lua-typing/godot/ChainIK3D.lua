@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.12.1
+-- Generated API for game version 0.13.3
 
 ---@class ChainIK3D : IKModifier3D
 local ChainIK3D = {}

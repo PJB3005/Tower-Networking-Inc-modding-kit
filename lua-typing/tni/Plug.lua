@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Plug : PickableDevice
 ---@field ZINDEX integer # Constant value: 500

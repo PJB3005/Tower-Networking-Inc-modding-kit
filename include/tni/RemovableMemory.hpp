@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER_REMOVABLEMEMORY
 #define TNI_API_HEADER_REMOVABLEMEMORY
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>
@@ -18,6 +18,8 @@ struct RemovableMemory : public PeripheralPlug {
 
 	PROPERTY(available_mem, int64_t);
 	PROPERTY(power_draw, int64_t);
+	PROPERTY(recycle_price_factor, double);
+	PROPERTY(recycle_price, int64_t);
 	PROPERTY(product_name, String);
 	PROPERTY(price, int64_t);
 	PROPERTY(description, String);

@@ -1,7 +1,8 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class SettingsMenu : Control
+---@field PACKET_ANIM_OPTIONS Array<any> # Constant value: ["no_animation", "circular_packet", "stretched_glowing_packet"]
 ---@field game_settings Container
 ---@field audio_settings Container
 ---@field graphic_settings Container

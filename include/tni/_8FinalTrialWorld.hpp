@@ -1,6 +1,6 @@
 #ifndef TNI_API_HEADER__8FINALTRIALWORLD
 #define TNI_API_HEADER__8FINALTRIALWORLD
-// Generated API for game version 0.13.1
+// Generated API for game version 0.13.3
 // If any constants or enum's change between versions, a rebuild of your mod with updated headers may be required!
 
 #include <generated_api.hpp>

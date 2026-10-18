@@ -1,5 +1,5 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class Barracks : ScreenApp
 ---@field rack_removal_price integer # Constant value: 25
@@ -7,6 +7,7 @@
 ---@field r_remove Container
 ---@field cfmbutton Button
 ---@field optcontainer Container
+---@field category_group ButtonGroup
 ---@field cable_tray_panel_items Array<any>
 ---@field curr_ghost CollisionObject2D
 ---@field curr_rack Container

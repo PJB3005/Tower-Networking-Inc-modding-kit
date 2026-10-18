@@ -1,9 +1,9 @@
 ---@meta _
--- Generated API for game version 0.13.1
+-- Generated API for game version 0.13.3
 
 ---@class TrayAffixedLink : Node2D
----@field DEFAULT_MAX_CABLE_LENGTH number # Constant value: 700.0
----@field MAX_INTERTRAY_LENGTH number # Constant value: 3500.0
+---@field DEFAULT_MAX_CABLE_LENGTH number # Constant value: 1150.0
+---@field MAX_INTERTRAY_LENGTH number # Constant value: 1000.0
 ---@field DANGLE_SLACK_FACTOR number # Constant value: 1.15
 ---@field ZINDEX integer # Constant value: 151
 ---@field INTER_TRAY_ZINDEX integer # Constant value: 1000
