@@ -1,0 +1,27 @@
+bazel_dep(name = "bazel_skylib", version = "1.9.0")
+bazel_dep(name = "platforms", version = "1.1.0")
+bazel_dep(name = "rules_cc", version = "0.2.27")
+bazel_dep(name = "llvm", version = "0.8.26")
+bazel_dep(name = "rules_pkg", version = "1.3.0")
+
+"""
+toolchain = use_extension("@llvm//extensions:toolchain.bzl", "toolchain")
+toolchain.exec(
+    arch = "x86_64",
+    os = "linux",
+)
+toolchain.exec(
+    arch = "x86_64",
+    os = "windows",
+)
+toolchain.target(
+    arch = "riscv64",
+    os = "linux",
+)
+use_repo(toolchain, "llvm_toolchains")
+"""
+
+register_toolchains("@llvm//toolchain:all")
+
+include("//tni-bazel:tni-bazel.MODULE.bazel")
+include("//src/stb:stb.MODULE.bazel")

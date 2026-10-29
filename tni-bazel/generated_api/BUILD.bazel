@@ -1,0 +1,18 @@
+load("@bazel_skylib//rules:copy_file.bzl", "copy_file")
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+copy_file(
+    name="generated_api.hpp",
+    src="@generated_api//file",
+    out="generated_api.hpp"
+)
+
+cc_library(
+    name="generated_api",
+    includes=["."],
+    hdrs=["generated_api.hpp"],
+    copts=[
+        "-std=c++23"
+    ],
+    visibility = ["//visibility:public"]
+)

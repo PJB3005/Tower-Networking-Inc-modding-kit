@@ -1,0 +1,12 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+cc_library(
+    name = "tower_api",
+    hdrs = glob(["tni/*.hpp"]),
+    copts = [
+        "-std=c++23",
+    ],
+    includes = ["tni/"],
+    visibility = ["//visibility:public"],
+    deps = ["//tni-bazel/generated_api"],
+)

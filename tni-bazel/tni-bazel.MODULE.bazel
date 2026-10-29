@@ -1,0 +1,18 @@
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "godot-sandbox",
+    build_file = "@//:godot-sandbox.BUILD.bazel",
+    sha256 = "036dcfa5e74eb198872b4685ff6b160d3bf0cdd35c9e12f2eb795c1f74e842cf",
+    strip_components = 1,  # Repo name prefix
+    urls = ["https://github.com/libriscv/godot-sandbox/archive/refs/tags/v0.60.zip"],
+)
+
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+
+http_file(
+    name = "generated_api",
+    downloaded_file_path = "generated_api.hpp",
+    sha256 = "b4e0a6f7d951468e9c7f21769864921150a08599a4f19709c30296dfe491655c",
+    url = "https://github.com/libriscv/godot-sandbox-programs/releases/download/v0.1/generated_api.hpp",
+)

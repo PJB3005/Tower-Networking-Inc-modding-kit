@@ -1,0 +1,16 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+platform(
+    name = "tni-sandbox",
+    constraint_values = [
+        "@platforms//os:linux",
+        "@platforms//cpu:riscv64",
+        "@llvm//constraints/libc:musl",
+    ],
+)
+
+alias(
+    name = "tower_api",
+    actual = "//include:tower_api",
+    visibility = ["//visibility:public"],
+)

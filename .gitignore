@@ -11,3 +11,7 @@ mods/**/*.elf
 
 !programs/luajit-support/libluajit.a
 !programs/luajit-support/zig-libluajit.a
+
+bazel-*
+.clwb
+.idea
